@@ -1,0 +1,25 @@
+cd your_nw_folder
+>npm install mysql q --save
+
+/*create the database*/
+CREATE DATABASE `realmadrid`;
+
+/*create the table*/
+CREATE TABLE `player` (
+	`id` INT NOT NULL AUTO_INCREMENT,
+	`nombre` VARCHAR(50) NULL DEFAULT NULL,
+	`dni` VARCHAR(50) NULL DEFAULT NULL,
+	`fechanac` VARCHAR(50) NULL DEFAULT NULL,
+	`responsable` VARCHAR(50) NULL DEFAULT NULL,
+	`sexo` VARCHAR(50) NULL DEFAULT NULL,
+	`fechadisp` VARCHAR(50) NULL DEFAULT NULL,
+	`seleccionado` VARCHAR(50) NULL DEFAULT NULL,
+	`puestoaprop` VARCHAR(50) NULL DEFAULT NULL,
+	`puntualidad` VARCHAR(50) NULL DEFAULT NULL,
+	`presentacion` VARCHAR(200) NULL DEFAULT NULL,
+	`adestacar` VARCHAR(150) NULL DEFAULT NULL,
+	`nividiomas` VARCHAR(150) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB;

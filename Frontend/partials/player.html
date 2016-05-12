@@ -1,0 +1,53 @@
+
+<!--head: titulo de formulario-->
+
+
+
+	<div class="formulario">
+		<h1>Nuevo Candidato</h1>
+		<h3>{{player.nombre}}</h3>
+		<p></p>
+		<!-- DATOS PERSONALES -->
+		<div class="datos_pers">
+			<form>
+				Nombre: <input ng-model="player.nombre" placeholder="Nombre" type="text" id="nombre" required>
+				DNI:  <input ng-model="player.dni" placeholder="XXXXXXXXY" type="text"  required>
+				Fecha nacimiento: <input ng-model="player.fechanac" placeholder="dd/mm/aaaa" type="date">
+				Fecha entrevista: <input ng-model="player.fechaentrev" placeholder="dd/mm/aaaa" type="date" >
+				Fecha entrada: 	  <input ng-model="player.fechaentrada" placeholder="dd/mm/aaaa" type="date" >
+				<br>
+				Sexo: <input ng-model="player.mujer"type="radio" value="hombre" > Hombre
+					  <input  ng-model="player.hombre"type="radio" value="mujer"> Mujer
+				&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
+				Fecha disponibilidad: <input class="fdisp" ng-model="player.fechadisp" placeholder="dd/mm/aaaa" type="date" >
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+				Seleccionado <input type="checkbox" ng-model="player.seleccionado" value="selecc">
+			</form>
+			<td>
+          <button type="submit" class="btn btn-success btn-sm" ng-click="save()" ng-disabled="form.$invalid">{{button}}</button>
+      </td>
+			<tr>
+          <button type="submit" class="btn btn-sm" ng-click="click()" ng-disabled="form.$invalid">{{button}}</button>
+      </tr>
+		</div>
+		<p></p>
+		<p></p>
+		<p></p>
+		<!-- DATOS ENTREVISTA -->
+		<div class="datos_entrev">
+			<form>
+				<p>Puesto apropiado: <input ng-model="player.puestoaprop" placeholder="Puesto " type="text"  ></p>
+				<p>Puntualidad:</p>
+				<textarea rows="4" cols="180" ng-model="player.puntualidad" placeholder="Puntualidad del candidato" ></textarea>
+				<p>Presentaci&oacute;n:</p>
+				<textarea rows="4" cols="180" ng-model="player.presentacion" placeholder="Presentaci&oacute;n del candidato" ></textarea>
+				<p>Aspectos a destacar:</p>
+				<textarea rows="4" cols="180" ng-model="player.adestacar" placeholder="Aspectos a destacar del candidato" ></textarea>
+				<p>Nivel Idiomas:</p>
+				<textarea rows="4" cols="180" ng-model="player.nividiomas" placeholder="Nivel de idiomas" ></textarea>
+
+
+			</form>
+		</div>
+
+	</div>

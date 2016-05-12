@@ -1,0 +1,14 @@
+extends ../layout
+
+block content
+    h1.
+        #{title}
+    form#formAddPlayer(name="addplayer",method="post",action="/players")
+        p Id:
+            input#inputId(type="number", placeholder="ex. 1", name="id")
+        p Name:
+            input#inputNombre(type="text", placeholder="ex. John Smith", name="nombre")
+        p Position:
+            input#inputPosition(type="text", placeholder="ex. 123456", name="responsable")
+        p
+            button#btnSubmit(type="submit") submit

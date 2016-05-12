@@ -1,0 +1,56 @@
+<div class="bg-light lter b-b wrapper-md">
+    <h1 class="m-n font-thin h3"><img src="img/logo.png" width="50" height="50">Listado de candidatos</h1>
+</div>
+<div class="wrapper-md">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <button class="btn m-b-xs btn-sm btn-success btn-addon" ng-click="refresh()"><i class="fa fa-refresh"></i>Refresh</button>
+            <p style="float: right;">Search : <input type="search" ng-model="search" class="form-control input-sm w-sm inline m-r" placeholder="Global Search"></p>
+        </div>
+        <form name="form" class="form-validation">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Seleccionado</th>
+                        <th>Responsable</th>
+                        <th>DNI</th>
+                        <th>Fecha de entrada</th>
+                        <th>Fecha de entrevista</th>
+                        <th>Fecha de disponibilidad</th>
+                        <th>Fecha de nacimiento</th>
+                        <th>Idiomas</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr dir-paginate="player in datas|filter:search|itemsPerPage: 5" >
+                        <td style="width: 100px">{{player.id}}</td>
+                        <td>{{player.nombre}}</td>
+                        <td>{{player.seleccionado}}</td>
+                        <td>{{player.responsable}}</td>
+                        <td>{{player.dni}}</td>
+                        <td>{{player.fechaentrada.substring(0,10)}}</td>
+                        <td>{{player.fechaentrev.substring(0,10)}}</td>
+                        <td>{{player.fechadisp.substring(0,10)}}</td>
+                        <td>{{player.fechanac.substring(0,10)}}</td>
+                        <td style="width: 100px">{{player.nividiomas}}</td>
+                        <td style="width:150px">
+                            <button class="btn btn-info btn-xs"><a href="#/player" ng-click="click(player)" class="glyphicon glyphicon-edit"></a></button>
+                            <button class="btn btn-danger btn-xs" ng-click="remove(player)"><i class="glyphicon glyphicon-trash"></i></button>
+                        </td>
+                    </tr>
+
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="5" class="text-center">
+                <dir-pagination-controls boundary-links="true"></dir-pagination-controls>
+                </td>
+                </tr>
+                </tfoot>
+            </table>
+        </form>
+    </div>
+</div>

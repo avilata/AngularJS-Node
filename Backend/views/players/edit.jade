@@ -1,0 +1,17 @@
+extends ../layout
+
+block content
+    h1.
+        player ID #{player._id}
+    form(action='/players/#{player._id}/edit',method='post',name='updateplayer',enctype='application/x-www-form-urlencoded')
+        p Id:
+            input#inputId(type='number', value='#{player.id}', name='id')
+        p Nombre:
+            input#inputNombre(type='text', value='#{player.nombre}', name='nombre')
+        p Responsable:
+            input#inputResponsable(type='text', value='#{player.position}', name='position')
+       p
+            input(type='hidden',value='PUT',name='_method')
+        p
+            button#btnSubmit(type='submit').
+                Update

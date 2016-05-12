@@ -1,0 +1,24 @@
+body{
+ background-color:#F7F3F3;
+ font-family: Arial;
+}
+form{
+ text-align:center;
+
+}
+input{
+ margin-right:10px;
+ margin-bottom: 20px;
+}
+p{
+ text-align: left;
+ margin-left: 2%;
+}
+.datos_pers, .datos_entrev{
+ padding-top:10px;
+ padding-bottom:10px;
+ background-color: #EFEFEF;
+ border-style: solid ;
+ border-width: 1px;
+ border-color:#979797;
+}

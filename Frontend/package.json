@@ -1,0 +1,23 @@
+{
+  "name": "hala-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "apps/public_html/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" &#038;&#038; exit 1"
+  },
+  "author": "Herudi",
+  "window": {
+    "toolbar": false,
+    "width": 1000,
+    "height": 630
+  },
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.0",
+    "dirPagination": "^0.1",
+    "jquery": "^1.0",
+    "mysql": "^2.10.2",
+    "q": "^1.4.1"
+  }
+}
