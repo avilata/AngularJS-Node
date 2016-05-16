@@ -5,7 +5,7 @@ The first view (player.html) shows the form-to-complete. Once it is saved, all t
 <b>HOW IS IT DONE -</b> The stucture is divided into two: <b>SERVER</b> and <b>CLIENT</b>. <br>
 <b>Setting up a SERVER:</b> Using express + nodeJS + mongoDB<br>
 To build the Node.js skeleton, the most commlonly used is Express.js. You should have Node.js and NPM installed in order to proceed.<br>
-First, open a terminal window and write the following commands: <br>&nbsp;&nbsp;&nbsp; npm install -g express <br> &nbsp;&nbsp;&nbsp;&nbsp; npm install -g express-generator<br>
+First, open a terminal window and write the following commands: <br>&nbsp;&nbsp;&nbsp; npm install -g express <br> &nbsp;&nbsp;&nbsp; npm install -g express-generator<br>
 
 To generate a new app project folder with its skeleton, rute the terminal to the directory where you want to build the new app and write this command: express nameOfyourApp<br>
 To create a new data base, using mongoDB (which you should install), only two steps are needed:<br>
