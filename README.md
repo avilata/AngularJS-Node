@@ -7,10 +7,10 @@ The first view (player.html) shows the form-to-complete. Once it is saved, all t
 To build the Node.js skeleton, the most commlonly used is Express.js. You should have Node.js and NPM installed in order to proceed.<br><br>
 First, open a terminal window and write the following commands: <br>&nbsp;&nbsp;&nbsp; <i>npm install -g express <br> &nbsp;&nbsp;&nbsp; npm install -g express-generator</i><br>
 
-To generate a new app project folder with its skeleton, rute the terminal to the directory where you want to build the new app and write this command: express nameOfyourApp<br>
+To generate a new app project folder with its skeleton, rute the terminal to the directory where you want to build the new app and write this command: <i>express nameOfyourApp</i><br>
 To create a new data base, using mongoDB (which you should install), only two steps are needed:<br>
-1. Run MongoDB server. Click over the mongodb.exe or go to your mongo folder with your terminal and type mongod. <br>
-2. Open a new terminal and type mongo, to create the new data base, type use nameOfYourDB. <br>
+1. Run MongoDB server. Click over the mongodb.exe or go to your mongo folder with your terminal and type <i>mongod</i>. <br>
+2. Open a new terminal and type <i> mongo</i>, to create the new data base, type <i> use nameOfYourDB </i>. <br>
 You should now create a folder to place your DB's connections. Create this folder inside your new App directory. Call it model. <br>
 Inside model, create a file called db.js and add the following lines:<br>
 var mongoose = require('mongoose'); <br>
