@@ -1,8 +1,8 @@
 <h2>Creating a web FORM</h2>
 <b>WHAT IS IT -</b> The platforms main aim is to create new candidates and save them into your DB given that they can later on have their profiles edited or erased. In order to do this there are two views.<br>
 The first view (player.html) shows the form-to-complete. Once it is saved, all the existing candidates are shown in a list the second view (playerList.html) where there are links to the editing process or to deleting the candidate.
-<br>
-<b>HOW IS IT DONE -</b> The stucture is divided into two: <b>SERVER</b> and <b>CLIENT</b>. <br>
+<br><br>
+<b>HOW IS IT DONE -</b> The stucture is divided into two: <b>SERVER</b> and <b>CLIENT</b>. <br><br>
 <b>Setting up a SERVER:</b> Using express + nodeJS + mongoDB<br>
 To build the Node.js skeleton, the most commlonly used is Express.js. You should have Node.js and NPM installed in order to proceed.<br>
 First, open a terminal window and write the following commands: <br>&nbsp;&nbsp;&nbsp; npm install -g express <br> &nbsp;&nbsp;&nbsp; npm install -g express-generator<br>
