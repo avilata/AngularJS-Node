@@ -24,3 +24,7 @@ npm install body-parser --save<br>
 npm install method-override --save<br>
 
 To test it is working, type npm start, and open your navigator and search localhost:3000, which should welcome you to Express.<br>
+
+To finish building up the server part, a file with the objects of the App should be created. In my case, the candidates are called players, so => model->players.js <br>
+!!!Every object file you create in model, must be called in app.js using objectFile = require('./model/objectFile')
+
